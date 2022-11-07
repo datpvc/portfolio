@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- font - awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font gg Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Page Loader Start -->
+    <div class="page__loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Page Loader End -->
+
+    <!-- Background Start -->
+    <div class="bg__circles">
+      <div class="circles__1"></div>
+      <div class="circles__2"></div>
+      <div class="circles__3"></div>
+      <div class="circles__4"></div>
+    </div>
+    <!-- Background End -->
+
+    <!-- Overlay Start -->
+    <div class="overlay"></div>
+    <!-- Overlay End -->
+
+    <!-- Main Start -->
+    <div class="main hidden">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="button" class="nav__toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <div class="nav__inner">
+                <ul>
+                  <li>
+                    <a href="#home" class="nav__item link__item">home</a>
+                  </li>
+                  <li>
+                    <a href="#about" class="nav__item link__item">about</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio" class="nav__item link__item">
+                      portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav__item link__item">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+
+      <!-- Home Section Start -->
+      <section id="home" class="home__section align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home__text">
+              <p>Hello</p>
+              <h1>I'm Cong Dat</h1>
+              <h2>Front-end Web Developer</h2>
+              <a href="#about" class="btn link__item">more about me</a>
+              <a href="#portfolio" class="btn link__item">portfolio</a>
+            </div>
+            <div class="home__img">
+              <div class="img__box">
+                <img src="./img/me/avatar.jpg" alt="avatar-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!--  About Section Start -->
+      <section id="about" class="about__section sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="section__title">
+              <h2>about me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about__img">
+              <div class="img__box">
+                <img src="./img/me/avatar.jpg" alt="about-img" />
+              </div>
+            </div>
+            <div class="about__text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                in reprehenderit deleniti cum. Dicta eaque odit molestias,
+                accusantium maxime incidunt neque quasi nam placeat facere,
+                commodi repellat dolore sunt ex.
+              </p>
+              <h3>skills</h3>
+              <div class="skills">
+                <div class="skill__item">html</div>
+                <div class="skill__item">css</div>
+                <div class="skill__item">bootstrap</div>
+                <div class="skill__item">sass</div>
+                <div class="skill__item">javascript</div>
+                <div class="skill__item">reactjs</div>
+                <div class="skill__item">typescript</div>
+              </div>
+              <div class="about__tabs">
+                <button
+                  type="button"
+                  class="tab__item active"
+                  data-target="#education"
+                >
+                  education
+                </button>
+                <button
+                  type="button"
+                  class="tab__item"
+                  data-target="#experience"
+                >
+                  experience
+                </button>
+              </div>
+
+              <!-- Education Start -->
+              <div class="tab__content active" id="education">
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <span class="date">2012 - 2016</span>
+                    <h4>Finance and Banking - <span>HUST</span></h4>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dolorum labore animi quasi libero velit tempora?
+                    </p>
+                  </div>
+                  <div class="timeline__item">
+                    <span class="date">12/2021 - Present</span>
+                    <h4>
+                      Information Technology -
+                      <span>PTIT</span>
+                    </h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo dolorem est unde consequuntur, dicta nostrum.
+                    </p>
+                  </div>
+                  <div class="timeline__item">
+                    <span class="date">06/2022 - 12/2022</span>
+                    <h4>Front-end Web Developer - <span>CyberSoft</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Deleniti vel molestiae esse natus repudiandae et.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Education End -->
+
+              <!-- Experience Start -->
+              <div class="tab__content" id="experience">
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <span class="date">2017-2018</span>
+                    <h4>Technical Staff - <span>Garena Gcafe</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsum sapiente deserunt quam sunt quos omnis!
+                    </p>
+                  </div>
+                  <div class="timeline__item">
+                    <span class="date">2018-2021</span>
+                    <h4>Technical Team Leader - <span>Phong Vu</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsum sapiente deserunt quam sunt quos omnis!
+                    </p>
+                  </div>
+                  <div class="timeline__item">
+                    <span class="date">2021-2022</span>
+                    <h4>IT Helpdesk - <span>Hoa Binh Minh Motorcycle</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsum sapiente deserunt quam sunt quos omnis!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience End -->
+              <a href="" target="_blank" class="btn">download cv</a>
+              <a href="#contact" class="btn link__item">contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  About Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section id="portfolio" class="portfolio__section sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="section__title">
+              <h2>recent work</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Portfolio Item Start -->
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/1.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/2.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/3.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/4.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/5.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item__thumbnail">
+                <img src="./img/portfolio/6.jpg" alt="item__thumbnail" />
+              </div>
+              <h3 class="portfolio__item__title">education courses website</h3>
+              <button type="button" class="btn view__project__btn">
+                View Project
+              </button>
+              <div class="portfolio__item__details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis enim obcaecati accusamus officia aliquam eaque, sed
+                    veniam voluptates optio a fugiat sunt exercitationem saepe
+                    harum ab, facere, deserunt nulla ratione.
+                  </p>
+                </div>
+                <div class="general__info">
+                  <ul>
+                    <li>Created - <span>4 Dec 2020</span></li>
+                    <li>technologies used - <span>Html, Css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a href="#" target="_blank">www.domain.com</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item End -->
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- Contact Section Start -->
+      <section id="contact" class="contact__section sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="section__title">
+              <h2>contact me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact__form">
+              <form>
+                <div class="row">
+                  <div class="input__group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input__control"
+                      required
+                    />
+                  </div>
+                  <div class="input__group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input__control"
+                      required
+                    />
+                  </div>
+                  <div class="input__group">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input__control"
+                      required
+                    />
+                  </div>
+                  <div class="input__group">
+                    <textarea
+                      placeholder="Message"
+                      class="input__control"
+                    ></textarea>
+                  </div>
+                  <div class="submit__btn">
+                    <button type="submit" class="btn">send message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact__info">
+              <div class="contact__info__item">
+                <h3>Email</h3>
+                <p>datpvc.dev@gmail.com</p>
+              </div>
+              <div class="contact__info__item">
+                <h3>Phone</h3>
+                <p>+84 845 250622</p>
+              </div>
+              <div class="contact__info__item">
+                <h3>follow me</h3>
+                <div class="social__links">
+                  <a
+                    href="https://www.facebook.com/congdat1412/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/capricorn1412/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://github.com/Dat1412" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                  <a href="https://gitlab.com/dat1412" target="_blank">
+                    <i class="fab fa-gitlab"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main End -->
+
+    <!-- Portfolio Item Details Popup Start -->
+    <div class="portfolio__popup">
+      <div class="pp__inner">
+        <div class="pp__content">
+          <div class="pp__header">
+            <button type="button" class="btn pp__close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="pp__thumbnail">
+              <img src="" alt="pp__thumbnail" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp__body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Item Details Popup End -->
+
+    <!-- my js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
